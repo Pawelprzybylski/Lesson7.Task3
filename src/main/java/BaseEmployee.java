@@ -4,7 +4,6 @@ public abstract class BaseEmployee {
     private String surname;
     private int baseSallary;
 
-
     public BaseEmployee(String name, String surname, int baseSallary) {
         this.name = name;
         this.surname = surname;
@@ -14,6 +13,7 @@ public abstract class BaseEmployee {
     public int getBaseSallary() {
         return baseSallary;
     }
+
     public String getName() {
         return name;
     }
@@ -30,14 +30,14 @@ public abstract class BaseEmployee {
         this.surname = surname;
     }
 
-
     @Override
     public String toString() {
         return "BaseEmployee{" +
-                "name='" + name + "" +
-                ", surname='" + surname + "" +
-                '}';
+                "name=" + name + "" +
+                ", surname=" + surname + "" + ", Sallary" + baseSallary;
     }
 
+
     abstract int calculateMonthlySalary();
+
 }
